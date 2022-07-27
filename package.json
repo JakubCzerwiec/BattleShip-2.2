@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "description": "",
   "private": true,
-
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -18,9 +17,15 @@
   },
   "homepage": "https://github.com/JakubCzerwiec/BattleShip-2.2#readme",
   "devDependencies": {
-    "webpack-cli": "^4.10.0"
+    "css": "^3.0.0",
+    "css-loader": "^6.7.1",
+    "loader": "^2.1.1",
+    "style-loader": "^3.3.1",
+    "webpack-cli": "^4.10.0",
+    "webpack-stream": "^7.0.0"
   },
   "dependencies": {
-    "lodash": "^4.17.21"
+    "lodash": "^4.17.21",
+    "webpack": "^5.74.0"
   }
 }

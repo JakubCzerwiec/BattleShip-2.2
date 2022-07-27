@@ -1,0 +1,18 @@
+body {
+    background-color: aquamarine;
+}
+
+.gameplay {
+    width: auto;
+    height: auto;
+}
+
+.squere {
+    width: 1em;
+    height: 1em;
+    border: 1px solid black;
+}
+
+.shipOn {
+    background-color: green;
+}
