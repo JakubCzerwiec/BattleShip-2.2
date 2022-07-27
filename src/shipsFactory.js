@@ -11,7 +11,7 @@ function Ship (size) {
     }
 
     let isSunk = () => {
-        
+
     }
 }
 
@@ -19,4 +19,4 @@ function Ship (size) {
 
 
 
-export {Ship};
+export  {Ship};
