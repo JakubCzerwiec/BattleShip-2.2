@@ -1,4 +1,6 @@
+import { game } from './gameboardFactory';
 import {Ship} from './shipsFactory';
+import {renderBoard} from './renderBoard'
 
 let main = document.querySelector('main');
 
@@ -28,7 +30,14 @@ function shipsSetup () {
         // logic for changing index step when placing ship on gameboard
     })
 
+    let allSquers = document.querySelectorAll('.squere');
 
+    for (let i = 0; i < allSquers.length; i++) {
+        allSquers[i].addEventListener('click', () => {
+            game[i].shipOn == true;
+            renderBoard()
+        })
+    }
 
 
 }

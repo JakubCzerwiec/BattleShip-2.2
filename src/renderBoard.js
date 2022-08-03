@@ -9,6 +9,14 @@ let renderBoard = () => {
         squere.className = 'squere';
         gameplay.appendChild(squere);
     }
+
+    let allSquers = document.querySelectorAll('.squere');
+
+    for (let i = 0; i < allSquers.length; i++) {
+        if (game[i].shipOn == true) {
+            allSquers[i].classList.add('shipOn')
+        }
+    }
 }
 
 export {renderBoard}

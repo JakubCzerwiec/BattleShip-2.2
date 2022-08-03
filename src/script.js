@@ -14,25 +14,20 @@ window['ships'] = ships;
 
 gameboardFactory(100);
 
-let gameplay = document.querySelector('.gameplay');
-
-
-
-game[1].shipOn = true
-
 renderBoard()
+
+let gameplay = document.querySelector('.gameplay');
 
 let allSquers = document.querySelectorAll('.squere');
 
-let drawShips = () => {
-    for (let i = 0; i < allSquers.length; i++) {
-        if (game[i].shipOn == true) {
-            allSquers[i].classList.add('shipOn')
-        }
-    }
 
-renderBoard()
-}
-drawShips()
+allSquers.forEach((element, index) => {
+    element.addEventListener('click', () => {
+        game[index].shipOn = true;
+        renderBoard()
+    })
+})
 
-shipsSetup()
+
+
+
