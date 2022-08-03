@@ -4,9 +4,13 @@ import { Ship } from './shipsFactory';
 import {gameboardFactory} from './gameboardFactory'
 import {game} from './gameboardFactory';
 import {renderBoard} from './renderBoard';
+import {shipsSetup} from './shipsOnBoard';
 
 
 window['game'] = game;
+
+let ships = [];
+window['ships'] = ships;
 
 gameboardFactory(100);
 
@@ -20,7 +24,7 @@ renderBoard()
 
 let allSquers = document.querySelectorAll('.squere');
 
-let bums = () => {
+let drawShips = () => {
     for (let i = 0; i < allSquers.length; i++) {
         if (game[i].shipOn == true) {
             allSquers[i].classList.add('shipOn')
@@ -29,4 +33,6 @@ let bums = () => {
 
 renderBoard()
 }
-bums()
+drawShips()
+
+shipsSetup()

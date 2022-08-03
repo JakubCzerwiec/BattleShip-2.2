@@ -1,10 +1,12 @@
 body {
-    background-color: aquamarine;
+    background-color: grey;
 }
 
 .gameplay {
-    width: auto;
-    height: auto;
+    width: 12em;
+    height: 10em;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .squere {
@@ -15,4 +17,11 @@ body {
 
 .shipOn {
     background-color: green;
+}
+
+.shipsBox {
+    margin: 5em;
+    width: 10em;
+    height: 10em;
+    background-color: blueviolet;
 }

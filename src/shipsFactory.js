@@ -16,7 +16,4 @@ function Ship (size) {
 }
 
 
-
-
-
 export  {Ship};
