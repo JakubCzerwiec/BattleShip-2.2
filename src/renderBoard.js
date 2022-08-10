@@ -1,6 +1,6 @@
 let gameplay = document.querySelector('.gameplay');
 
-
+// Przerobić planszę żeby indexy w poziomie były ascii symbols++ a w pionie liczby ++
 
 let renderBoard = () => {
     gameplay.innerHTML = '';

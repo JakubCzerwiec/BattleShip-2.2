@@ -20,13 +20,15 @@ let gameplay = document.querySelector('.gameplay');
 
 let allSquers = document.querySelectorAll('.squere');
 
+// make loop for allSquers event listener for setting ships
 
-allSquers.forEach((element, index) => {
-    element.addEventListener('click', () => {
-        game[index].shipOn = true;
-        renderBoard()
-    })
-})
+
+// allSquers.forEach((element, index) => {
+//     element.addEventListener('click', () => {
+//         game[index].shipOn = true;
+//         renderBoard()
+//     })
+// })
 
 
 
