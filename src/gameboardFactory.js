@@ -21,24 +21,16 @@ let gameboardFactory = (size) => {
 
     let characterCode;
 
-    for (let i = 0; i < size; i++) {
-        
-        x++;
+        for (let i = 0; i < size; i++) {
+            x++;
+            characterCode = String.fromCharCode([64+x])
+            
+            if (characterCode == 'A') y++;
 
+            game.push(new GridBox (false, false, characterCode, y, i))
 
-        characterCode = String.fromCharCode([64+x])
-         
-         
-        if (characterCode == 'A') y++;
-
-        game.push(new GridBox (false, false, characterCode, y, i))
-
-        
-
-        if (x == 10) x = 0;
-
-
-    }
+            if (x == 10) x = 0;
+        }
 
 }
 

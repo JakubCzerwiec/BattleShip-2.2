@@ -14,11 +14,6 @@ window['ships'] = ships;
 
 gameboardFactory(100);
 
-game[5].shipOn = true;
-game[4].shipOn = true;
-game[8].shipOn = true;
-game[14].shipOn = true;
-
 renderBoard()
 
 let gameplay = document.querySelector('.gameplay');
