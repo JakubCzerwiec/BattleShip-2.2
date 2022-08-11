@@ -14,21 +14,22 @@ window['ships'] = ships;
 
 gameboardFactory(100);
 
+game[5].shipOn = true;
+game[4].shipOn = true;
+game[8].shipOn = true;
+game[14].shipOn = true;
+
 renderBoard()
 
 let gameplay = document.querySelector('.gameplay');
 
-let allSquers = document.querySelectorAll('.squere');
 
 // make loop for allSquers event listener for setting ships
 
 
-// allSquers.forEach((element, index) => {
-//     element.addEventListener('click', () => {
-//         game[index].shipOn = true;
-//         renderBoard()
-//     })
-// })
+
+
+
 
 
 
