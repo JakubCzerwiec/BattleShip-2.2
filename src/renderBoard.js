@@ -1,4 +1,4 @@
-import {listenerForPlacingShips} from './listenerForPlacingShips'
+import {listenerForPlacingShips} from './listenerForPlacingShipsVertical'
 
 let gameplay = document.querySelector('.gameplay');
 
