@@ -10,6 +10,8 @@ function shipsSetup () {
     let shipsBox = document.createElement('div');
     shipsBox.className = 'shipsBox';
 
+
+    // Box to pop up before placing ship to tell size and ask about orientation
     main.appendChild(shipsBox);
 
     let shipName = document.createElement('div');
@@ -23,11 +25,12 @@ function shipsSetup () {
     orientation.innerText = 'Orientation of the ship?';
 
     let orientationSwitch = document.createElement('div');
-    orientationSwitch.className = 'orientationSwitch';
+    orientationSwitch.className = 'orientationSwitchH';
     orientation.appendChild(orientationSwitch);
 
     orientationSwitch.addEventListener('click', () => {
-        // logic for changing index step when placing ship on gameboard
+        // when click, toggle class and call different listener
+        // logic for calling different listener when placing ship on gameboard
     })
 
     let allSquers = document.querySelectorAll('.squere');

@@ -1,4 +1,5 @@
-import {listenerForPlacingShips} from './listenerForPlacingShipsVertical'
+import {listenerForPlacingShipsVertical} from './listenerForPlacingShipsVertical';
+import {listenerForPlacingShipsHorisontal} from './listenerForPlacingShipsHorisontal';
 
 let gameplay = document.querySelector('.gameplay');
 
@@ -22,7 +23,7 @@ let renderBoard = () => {
 
         gameplay.appendChild(squere);
     }
-    listenerForPlacingShips()
+    listenerForPlacingShipsHorisontal()
 
 }
 

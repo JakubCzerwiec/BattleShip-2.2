@@ -14,12 +14,14 @@ window['ships'] = ships;
 
 gameboardFactory(100);
 
-renderBoard()
+renderBoard();
+
+shipsSetup();
 
 let gameplay = document.querySelector('.gameplay');
 
 
-// make loop for allSquers event listener for setting ships
+
 
 
 

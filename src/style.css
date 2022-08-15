@@ -25,3 +25,19 @@ body {
     height: 10em;
     background-color: blueviolet;
 }
+
+.orientationSwitchV {
+    width: 2em;
+    height: 2em;
+    background-color: yellow;
+    margin-left: 0;
+    margin-right: 10em;
+}
+
+.orientationSwitchH {
+    width: 2em;
+    height: 2em;
+    background-color: yellow;
+    margin-left: 100%;
+    margin-right: 0%;
+}
