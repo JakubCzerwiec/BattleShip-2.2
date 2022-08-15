@@ -41,3 +41,11 @@ body {
     margin-left: 100%;
     margin-right: 0%;
 }
+
+.red {
+    background-color: red;
+}
+
+.green {
+    background-color: green;
+}
