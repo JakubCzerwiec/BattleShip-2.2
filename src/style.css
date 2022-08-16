@@ -4,7 +4,7 @@ body {
 
 .gameplay {
     width: 12em;
-    height: 10em;
+    height: 12em;
     display: flex;
     flex-wrap: wrap;
 }
@@ -46,6 +46,6 @@ body {
     background-color: red;
 }
 
-.green {
-    background-color: green;
+.blue {
+    background-color: blue;
 }

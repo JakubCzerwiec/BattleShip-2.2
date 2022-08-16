@@ -23,7 +23,6 @@ let renderBoard = () => {
 
         gameplay.appendChild(squere);
     }
-    listenerForPlacingShipsHorisontal()
 
 }
 

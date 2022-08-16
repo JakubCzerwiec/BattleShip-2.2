@@ -24,7 +24,7 @@ function listenerForPlacingShipsHorisontal () {
             let coordinatesY = [];
 
 
-           let conditionX = game[i].indexX.charCodeAt(0) + shipsInHarbour[shipsCount]
+           let conditionX = game[i].indexX.charCodeAt(0) + shipsInHarbour[shipsCount];
            console.log(conditionX)
 
             // condition to do not go outside the board

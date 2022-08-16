@@ -1,10 +1,10 @@
 import {renderBoard} from './renderBoard'
 import {Ship} from './shipsFactory';
+import { game } from './gameboardFactory';
 
 let shipsInHarbour = [4, 3, 3, 2, 2, 2, 1, 1, 1, 1];
 
 let shipsCount = 0;
-
 
 
 // in function parameters: condition for not going outside, coeficient for ships length (vertical +=10, horizontal ++)
@@ -13,7 +13,7 @@ function startGame () {
     alert('start!')
 }
 
-function listenerForPlacingShipsVertical () {
+function listenerForPlacingShips (conditionCalc, condition, coeficient) {
 
     let allSquers = document.querySelectorAll('.squere');
 
@@ -24,10 +24,14 @@ function listenerForPlacingShipsVertical () {
             let coordinatesX = [];
             let coordinatesY = [];
 
-            // condition to do not go outside the board
-            let conditionY = game[i].indexY + shipsInHarbour[shipsCount]
+            // try with variable as a function and two different function, triggered only one by main function parameter
 
-                if (conditionY >= 12) {
+            let conditionCalcV = game[i].indexY + shipsInHarbour[shipsCount];
+            let conditionCalcH = game[i].indexX.charCodeAt(0) + shipsInHarbour[shipsCount];
+
+            // condition to do not go outside the board
+
+                if (game[i].indexY + shipsInHarbour[shipsCount] >= condition) {
                     alert('ship will go outside')
                 }
 
@@ -61,7 +65,7 @@ function listenerForPlacingShipsVertical () {
                             coordinateY = game[i+shipLength-1].indexY;
                             coordinatesY.push(coordinateY);
 
-                            shipLength+=10;
+                            shipLength += coeficient;
                             }
 
                                         // creating and pushing new ship object into ships arr
@@ -85,4 +89,4 @@ function listenerForPlacingShipsVertical () {
 }
 
 
-export {listenerForPlacingShipsVertical}
+export {listenerForPlacingShips}
